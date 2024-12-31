@@ -118,7 +118,7 @@ const authenticateUser = async (email, password, proxy) => {
 const createUserAccount = async (email, password, proxy) => {
     try {
         const userName = email.split('@')[0];
-        const invitationCode = 'ol29b29fb1';
+        const invitationCode = 'ol36e88d4f';
 
         const registrationDetails = { name: userName, username: email, password, inviteCode: invitationCode };
         const registrationResult = await dynamicFetch('https://api.openloop.so/users/register', {
